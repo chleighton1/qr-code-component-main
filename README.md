@@ -38,7 +38,7 @@ This was a pretty simple project but good practice to re-enforce my knowledge of
 
 ### Continued development
 
-I am going to start devloping projects using a framework such as Next.js rather than just HTML and CSS
+I am going to start developing projects using a framework such as Next.js rather than just HTML and CSS
 
 ## Author
 
