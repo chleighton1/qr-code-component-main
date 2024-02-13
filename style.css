@@ -1,29 +1,38 @@
 body {
   background-color: hsl(212, 45%, 89%);
   font-family: sans-serif;
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
-  margin: 0;
+  display: grid;
+  place-content: center;
 }
 
-.qr_code {
-  display: flex;
-  flex-direction: column;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.card {
   background-color: hsl(0, 0%, 100%);
   width: 20rem;
   padding: 18px 18px;
-  border-radius: 12px;
-  margin: auto; /* Center horizontally */
+  border-radius: 12px
 }
 
 .image {
-  height: 300px;
+  display: block;
+  max-width: 100%;
   border-radius: 8px;
   margin-bottom: 18px;
 }
 
-.qr_label {
+.qr--label {
   padding: 12px 12px 6px 12px;
   text-align: center;
   font-size: 22px;
@@ -32,7 +41,7 @@ body {
   color: hsl(218, 44%, 22%);
 }
 
-.qr_description {
+.qr--description {
   padding: 12px 12px 12px 12px;
   text-align: center;
   font-size: 16px;
@@ -44,7 +53,6 @@ body {
 .attribution {
   font-size: 11px;
   text-align: center;
-  margin-top: auto; /* Push to the bottom */
   margin-bottom: 1rem;
 }
 
